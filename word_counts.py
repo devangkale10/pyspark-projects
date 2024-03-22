@@ -14,7 +14,7 @@ input = sc.textFile("Book")
 words = input.flatMap(normalizeWords)
 
 wordCounts = words.map(lambda x: (x, 1)).reduceByKey(lambda x, y: x + y)
-wordCountsSorted = wordCounts.map(lambda (x, y): (y, x)).sortByKey()
+wordCountsSorted = wordCounts.map(lambda x, y: (y, x)).sortByKey()
 
 results = wordCountsSorted.collect()
 
