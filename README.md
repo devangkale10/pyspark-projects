@@ -1,2 +1,2 @@
 # pyspark-projects
-A repository for Spark Projects with PySpark
+A repository for Apache Spark Projects with PySpark
